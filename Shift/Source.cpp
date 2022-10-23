@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 void main()
@@ -6,17 +6,17 @@ void main()
 	setlocale(LC_ALL, "Russian");
 	const int n = 10;
 	int arr[n] = { 1,2,3,4,5,6,7,8,9,10 };
-	//Вывод исходного массива на экран:
+	//Р’С‹РІРѕРґ РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
 
-    //Циклический сдвиг массива
+    //Р¦РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР°
 	int number_of_shifts;
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
-	//number_of_shifts = n - number_of_shifts; //циклический сдвиг массива вправо
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
+	//number_of_shifts = n - number_of_shifts; //С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[0];
@@ -29,7 +29,7 @@ void main()
 	cout << endl;
 
 	//system("CLS"); //CLS - Clear Screen
-	 //Вывод сдвинутого массива на экран:
+	 //Р’С‹РІРѕРґ СЃРґРІРёРЅСѓС‚РѕРіРѕ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";

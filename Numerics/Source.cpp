@@ -28,4 +28,28 @@ void main()
 		if (i % 4 == 0)cout << " ";
 	}
 #endif //DEC_2_BIN
+
+#ifdef DEC_2_HEX
+	const int n = 32;
+	int hex[n] = {}; // массив будет хранить разряды шестнадцатиричного числа
+	int decimal;     // десятичное число
+	cout << "Введите десятичное число: "; cin >> decimal;
+	cout << decimal << endl;
+	int i = 0;
+	//for (; decimal; i++, decimal /= 16)
+	//{
+	//	hex[i] = decimal % 16;
+	//}
+	while (decimal)
+	{
+		hex[i] = decimal % 16;
+		decimal /= 16;
+		i++;
+	}
+	for (--i; i >= 0; i--)
+	{
+		cout << hex[i] << " ";
+	}
+	
+#endif //DEC_2_HEX
 }

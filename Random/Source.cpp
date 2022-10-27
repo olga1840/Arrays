@@ -14,7 +14,7 @@ void main()
 	
 	for (int i = 0; i < n; i++)
 	{
-		arr[i] = rand() % (num_2-num_1+1)+num_1;
+		arr[i] = rand() % (num_2-num_1)+num_1;
 	}
 
 	for (int i = 0; i < n; i++)
